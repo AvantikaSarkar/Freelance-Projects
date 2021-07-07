@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Price Card</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+    body {
+      background: #cdcdcd;
+      padding: 0;
+      margin: 0;
+    }
+    #price {
+      text-align: center;
+    }
+    .plan {
+      display: inline-block;
+      margin: 10px 1%;
+      font-family: 'Lato', Arial, sans-serif;
+    }
+    .plan-inner {
+      background: #fff;
+      margin: 0 auto;
+      min-width: 100px;
+      max-width: 70%;
+      position: relative;
+    }
+    .entry-title {
+      background-image: linear-gradient(to right, #27c8c7, #3da7e4);
+      height: 200px;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    .entry-title>h3 {
+      background: #20BADA;
+      font-size: 20px;
+      padding: 5px 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0;
+    }
+    .entry-title .price {
+      position: absolute;
+      bottom: -25px;
+      background: #fff;
+      color: #27c8c7;
+      height: 95px;
+      width: 95px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      border-radius: 50px;
+      border: 5px solid #fff;
+      line-height: 80px;
+      font-size: 28px;
+      font-weight: 700;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .price span {
+      position: absolute;
+      font-size: 9px;
+      bottom: -15px;
+      left: 30px;
+      font-weight: 400;
+    }
+    .entry-content {
+      color: #323232;
+    }
+    .entry-content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    .entry-content li {
+      padding: 10px 0;
+    }
+    .entry-content ul>li>a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .entry-content ul>li>div>a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .entry-content section>p {
+      color: #868992;
+      padding: 20px 35px 20px 35px;
+    }
+    .btn {
+      padding-bottom: 2em;
+      text-align: center;
+    }
+    .btn a {
+      background: #fff;
+      padding: 10px 30px;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid #27c8c7;
+    }
+    .dark-row {
+      background-color: #f7f7f7;
+    }
+    .plan-details {
+      color: #868992;
+      margin: 5px;
+      padding-left: 20%;
+      padding-right: 20%;
+      font-size: 14px;
+    }
+    .footer {
+      padding-top: 3em;
+      padding-bottom: 2em;
+    }
+    .dropright .dropdown-toggle::after {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="price">
+    <!--price tab-->
+    <div class="plan">
+      <div class="plan-inner">
+        <div class="entry-title">
+          <img src='https://i.postimg.cc/m2rgtdL1/logo.png' style='height:150px; width:200px' />
+          <!-- <h3>Header if any</h3> -->
+          <div class="price">Rs.399<span style='color:#868992'>/semester</span>
+          </div>
+        </div>
+        <div class="entry-content">
+          <!-- <section class="plan-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </section> -->
+          <ul>
+            <li>
+              <strong>Notes</strong>
+            </li>
+            <li class='dark-row'>
+              <a href='#mindMapModal' data-toggle="modal" data-target="#mindMapModal">
+                <p style='padding-left:30%'><strong>Mind Maps </strong><span
+                    style='font-size:10px; color:#868992; padding-left:5px'>(Tap to view)</span></p>
+              </a>
+            </li>
+            <li>
+              <a href='#infoGraphModal' data-toggle="modal" data-target="#infoGraphModal">
+                <p style='padding-left:25%'><strong>Info Graphs </strong><span
+                    style='font-size:10px; color:#868992; padding-left:5px'>(Tap to view)</span></p>
+              </a>
+            </li>
+            <li class='dark-row'>
+              <strong>Previous year question papers
+                &
+                Important questions</strong>
+            </li>
+            <li>
+              <div class="dropdown show dropright">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <p style='padding-left:18%'><strong>Industrial guidance </strong><span
+                      style='font-size:10px; color:#868992'>(Tap to view)</span></p>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Career guidance from an Employee of any company</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Current working Technologies and tools</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Questions on any technology or tools</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Requirements and responsibilities for Job Roles</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Roles, available for technology</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Roles based on the stream</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Technologies based on the stream</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Companies providing the roles</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Interview Tips and more</a>
+                </div>
+                <p class='plan-details'>(Coming Soon)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <div class="btn">
+            <a href="#">Select Plan</a>
+          </div>
+          <p class='plan-details'>
+            30 day money back guarantee
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of price tab-->
+  </div>
+
+  <!--mindMap modal-->
+  <div class="modal fade" id="mindMapModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <img src='https://i.postimg.cc/SQny4nDc/infograph.png' style="height: 600px; width:700px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--mindMap modal-->
+  <div class="modal fade" id="infoGraphModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <img src='https://i.postimg.cc/KY92SbT9/mindmap.png' style="height: 600px; width:700px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    $('a[href$="#demoModal"]').on("click", function () {
+      $('#demoModal').modal('show');
+    })
+  </script>
+</body>
+
+</html>

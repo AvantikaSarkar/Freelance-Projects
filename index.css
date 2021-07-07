@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+  background: #cdcdcd;
+  padding: 0;
+  margin: 0;
+}
+
+#price {
+  text-align: center;
+}
+
+.plan {
+  display: inline-block;
+  margin: 10px 1%;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.plan-inner {
+  background: #fff;
+  margin: 0 auto;
+  min-width: 100px;
+  max-width: 70%;
+  position:relative;
+}
+
+.entry-title {
+  background-image: linear-gradient(to right,#27c8c7, #3da7e4);
+  height: 200px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.entry-title>h3 {
+  background: #20BADA;
+  font-size: 20px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.entry-title .price {
+  position: absolute;
+  bottom: -25px;
+  background: #fff;
+  color : #27c8c7;
+  height: 95px;
+  width: 95px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.price span {
+  position: absolute;
+  font-size: 9px;
+  bottom: -15px;
+  left: 30px;
+  font-weight: 400;
+}
+
+.entry-content {
+  color: #323232;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.entry-content li {
+  padding: 10px 0;
+}
+
+.entry-content ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.entry-content ul > li >div > a {
+  color: inherit;
+  text-decoration: none;
+}
+.entry-content section > p {
+  color: #868992;
+  padding : 20px 35px 20px 35px;
+}
+.btn {
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.btn a {
+  background: #fff;
+  padding: 10px 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #27c8c7;
+}
+
+.dark-row {
+  background-color: #f7f7f7;
+}
+
+.plan-details {
+  color: #868992;
+  margin: 5px;
+  padding-left:20%;
+  padding-right: 20%;
+  font-size: 14px;
+}
+
+.footer {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.dropright .dropdown-toggle::after {
+  display: none;
+}
